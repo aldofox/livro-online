@@ -1,0 +1,93 @@
+/* ============================================================
+   ADMIN CATEGORIES - BookStore
+============================================================ */
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.category-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: 0.25s;
+}
+
+.category-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(93, 64, 32, 0.12);
+}
+
+.category-card h3 {
+  font-family: var(--sans);
+  font-weight: 600;
+  color: var(--primary-dark);
+  margin: 0;
+}
+
+.category-card .slug {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.category-card .book-count {
+  background: var(--bg-alt);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primary);
+  align-self: flex-start;
+}
+
+.category-card .cat-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+/* ---------- Formulário ---------- */
+.category-form {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: var(--shadow);
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 480px;
+}
+
+.category-form h2 {
+  font-size: 1.25rem;
+  color: var(--primary-dark);
+  margin: 0;
+}
+
+.category-form input {
+  padding: 12px 15px;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  outline: none;
+  background: var(--bg);
+  transition: border-color 0.25s;
+}
+
+.category-form input:focus { border-color: var(--primary); }
+
+.category-form .form-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+

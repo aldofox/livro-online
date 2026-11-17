@@ -1,0 +1,157 @@
+/* ============================================================
+   CONTACT - BookStore
+============================================================ */
+
+.contact-page {
+  max-width: 1200px;
+  margin: 45px auto;
+  padding: 0 20px;
+}
+
+.contact-page h1 {
+  color: var(--primary-dark);
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.contact-subtitle {
+  color: var(--text-muted);
+  margin-bottom: 35px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 35px;
+  align-items: start;
+}
+
+/* ---------- Info ---------- */
+.contact-info {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+
+.contact-info h2 {
+  color: var(--primary-dark);
+  margin-bottom: 18px;
+}
+
+.info-item {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.info-item i {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--primary-light);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info-item h4 {
+  color: var(--text-h);
+  margin-bottom: 3px;
+  font-family: var(--sans);
+  font-size: 15px;
+}
+
+.info-item p {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+/* ---------- Form ---------- */
+.contact-form {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+}
+
+.contact-form h2 {
+  color: var(--primary-dark);
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 13px 15px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 15px;
+  background: var(--cream);
+  transition: border-color 0.25s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.contact-form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 100%;
+  border: none;
+  background: var(--primary);
+  color: #fff;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.25s, transform 0.2s;
+}
+
+.contact-form button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+.contact-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.form-message {
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-message.success {
+  background: var(--success-bg);
+  color: var(--success);
+}
+
+.form-message.error {
+  background: var(--danger-bg);
+  color: var(--danger);
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

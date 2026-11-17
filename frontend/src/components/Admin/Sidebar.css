@@ -1,0 +1,9 @@
+/*
+  ============================================================
+  Sidebar.css
+  ------------------------------------------------------------
+  Estilos da sidebar admin consolidados em `AdminLayout.css`.
+  Este arquivo permanece apenas para manter a compatibilidade
+  com `Sidebar.jsx` (que importa `./Sidebar.css`).
+  ============================================================
+*/

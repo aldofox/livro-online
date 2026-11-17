@@ -1,0 +1,57 @@
+/* ============================================================
+   ADMIN ORDERS - BookStore
+============================================================ */
+
+.admin-orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  min-width: 760px;
+}
+
+.admin-orders-table thead {
+  background: var(--primary-dark);
+  color: #fff;
+}
+
+.admin-orders-table th,
+.admin-orders-table td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.admin-orders-table tbody tr:hover { background: var(--bg-alt); }
+
+.status-select {
+  padding: 7px 10px;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: border-color 0.25s;
+}
+
+.status-select:focus { border-color: var(--primary); }
+
+.order-status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.order-status.waiting_payment,
+.order-status.pending { background: var(--warning-bg); color: #8f5f14; }
+.order-status.processing,
+.order-status.paid { background: #e3ecf7; color: #2b5a8a; }
+.order-status.shipped,
+.order-status.sent { background: #e2f0f2; color: #2c6b6f; }
+.order-status.delivered { background: var(--success-bg); color: #5c7040; }
+.order-status.cancelled { background: var(--danger-bg); color: #9c3a26; }

@@ -1,0 +1,76 @@
+/* ============================================================
+   REGISTER - BookStore
+============================================================ */
+
+.register-page {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, var(--bg-alt), var(--bg));
+}
+
+.register-container {
+  width: 100%;
+  max-width: 480px;
+  background: var(--card);
+  padding: 40px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.register-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary-dark);
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 14px;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  outline: none;
+  background: var(--bg);
+  transition: border-color 0.25s;
+}
+
+.register-form input:focus { border-color: var(--accent); }
+
+.register-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.register-btn:hover {
+  background: var(--primary);
+  transform: translateY(-2px);
+}
+
+.register-footer {
+  margin-top: 20px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.register-footer a {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.register-footer a:hover { color: var(--primary-dark); }

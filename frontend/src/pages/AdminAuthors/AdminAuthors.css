@@ -1,0 +1,234 @@
+/* ============================================================
+   ADMIN AUTORES - BookStore
+============================================================ */
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.admin-header h1 {
+  font-size: 1.8rem;
+  color: var(--primary-dark, #1f2937);
+}
+
+.author-admin-grid {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+/* ---------- Formulário ---------- */
+.author-form {
+  background: #fff;
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.author-form h2 {
+  font-size: 1.3rem;
+  color: var(--primary-dark, #1f2937);
+  margin-bottom: 4px;
+}
+
+.author-form label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.author-form select,
+.author-form input,
+.author-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  background: #f9fafb;
+  transition: border-color 0.2s;
+}
+
+.author-form select:focus,
+.author-form input:focus,
+.author-form textarea:focus {
+  outline: none;
+  border-color: var(--primary, #2563eb);
+  background: #fff;
+}
+
+.author-form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.btn-primary {
+  background: var(--primary, #2563eb);
+  color: #fff;
+  border: none;
+  padding: 11px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark, #1e40af);
+}
+
+.btn-cancel {
+  background: #e5e7eb;
+  color: #374151;
+  border: none;
+  padding: 11px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-cancel:hover {
+  background: #d1d5db;
+}
+
+/* ---------- Lista ---------- */
+.author-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.author-empty {
+  color: var(--text-muted, #6b7280);
+  font-size: 1rem;
+  padding: 24px;
+  background: #fff;
+  border: 1px dashed #d1d5db;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.author-admin-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #fff;
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.author-thumb {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #f3f4f6;
+}
+
+.author-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.author-admin-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.author-admin-info h3 {
+  font-size: 1rem;
+  color: var(--primary-dark, #1f2937);
+  margin-bottom: 4px;
+}
+
+.author-admin-info p {
+  font-size: 0.85rem;
+  color: var(--text-muted, #6b7280);
+  margin-bottom: 6px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge-success {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.badge-danger {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.author-admin-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.btn-edit {
+  background: #eff6ff;
+  color: var(--primary, #2563eb);
+  border: 1px solid #bfdbfe;
+  padding: 7px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-edit:hover {
+  background: #dbeafe;
+}
+
+.btn-delete {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+  padding: 7px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-delete:hover {
+  background: #fee2e2;
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 900px) {
+  .author-admin-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .author-admin-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .author-admin-actions {
+    flex-direction: row;
+  }
+}

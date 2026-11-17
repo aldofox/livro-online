@@ -1,0 +1,57 @@
+.flash-container {
+    position: fixed;
+    z-index: 2000;
+    top: 1rem;
+    right: 1rem;
+    display: grid;
+    gap: 0.75rem;
+    width: min(24rem, calc(100vw - 2rem));
+}
+
+.flash-message {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--primary);
+    border-radius: 10px;
+    background: var(--card);
+    box-shadow: var(--shadow);
+    color: var(--text);
+    animation: flash-enter 180ms ease-out;
+}
+
+.flash-message button {
+    flex: 0 0 auto;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.flash-success {
+    border-left-color: var(--success);
+}
+
+.flash-warning {
+    border-left-color: var(--warning);
+}
+
+.flash-error {
+    border-left-color: var(--danger);
+}
+
+@keyframes flash-enter {
+    from {
+        opacity: 0;
+        transform: translateY(-0.4rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

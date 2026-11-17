@@ -1,0 +1,12 @@
+/*
+  ============================================================
+  Admin.css
+  ------------------------------------------------------------
+  Os estilos do painel administrativo (dashboard, sidebar,
+  tabelas, botões, badges) foram unificados em
+  `src/components/Admin/AdminLayout.css`.
+
+  Este arquivo é mantido apenas por compatibilidade com o
+  import `./Admin.css` em `src/pages/Admin/Admin.jsx`.
+  ============================================================
+*/

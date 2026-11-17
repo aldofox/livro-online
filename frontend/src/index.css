@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+/* ============================================================
+   DESIGN SYSTEM - BOOKSTORE
+   Paleta de livraria: tons pastéis e marrons
+============================================================ */
+
+:root {
+  /* Cores principais (marrons) */
+  --primary: #a47148;
+  --primary-dark: #7c4a23;
+  --primary-light: #c89b70;
+  --accent: #d4a373;
+
+  /* Fundos pastéis */
+  --bg: #fbf7f0;
+  --bg-alt: #f4ede1;
+  --cream: #fefcfa;
+  --card: #ffffff;
+
+  /* Textos */
+  --text: #4a3728;
+  --text-h: #31200f;
+  --text-muted: #8c7b6a;
+
+  /* Bordas e sombras */
+  --border: #e8dcc9;
+  --shadow: 0 6px 18px rgba(93, 64, 32, 0.08);
+
+  /* Semânticas */
+  --success: #7d925b;
+  --success-bg: #eef2e3;
+  --warning: #b7791f;
+  --warning-bg: #fbf0da;
+  --danger: #bb4a33;
+  --danger-bg: #fae5df;
+
+  /* Tipografia */
+  --sans: 'Montserrat', 'Segoe UI', system-ui, Roboto, sans-serif;
+  --heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+
+  font: 16px/1.55 var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  color-scheme: light;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------- Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Empurra o rodapé para baixo em páginas com pouco conteúdo */
+#root > main {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+/* ---------- Tipografia ---------- */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading);
+  font-weight: 600;
+  color: var(--text-h);
+  line-height: 1.25;
+}
+
+h1 { font-size: 2.1rem; margin-bottom: 18px; }
+h2 { font-size: 1.6rem; margin-bottom: 14px; }
+h3 { font-size: 1.15rem; margin-bottom: 10px; }
+
+p { margin: 0; }
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover { color: var(--primary-dark); }
+
+img { max-width: 100%; display: block; }
+
+button { font-family: var(--sans); cursor: pointer; }
+
+input,
+select,
+textarea {
+  font-family: var(--sans);
+  color: var(--text);
+}
+
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--bg-alt); }
+::-webkit-scrollbar-thumb { background: var(--primary-light); border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: var(--primary); }
+
+/* ---------- Botão padrão ---------- */
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  display: inline-block;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 768px) {
+  :root { font-size: 15px; }
+  h1 { font-size: 1.7rem; }
+  h2 { font-size: 1.35rem; }
+}
+

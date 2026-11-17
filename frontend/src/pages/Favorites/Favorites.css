@@ -1,0 +1,109 @@
+/* ============================================================
+   FAVORITES - BookStore
+============================================================ */
+
+.favorites-page {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.favorites-page h1 {
+  margin-bottom: 20px;
+  color: var(--primary-dark);
+}
+
+.favorites-page > p {
+  color: var(--text-muted);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 40px;
+  text-align: center;
+}
+
+.favorites-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.favorite-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+.favorite-item img {
+  width: 90px;
+  height: 120px;
+  object-fit: contain;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  flex-shrink: 0;
+  padding: 6px;
+}
+
+.favorite-item .item-info {
+  flex: 1;
+}
+
+.favorite-item h3 {
+  font-family: var(--sans);
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-h);
+}
+
+.favorite-item .item-price {
+  color: var(--primary);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.favorite-item a {
+  display: inline-block;
+  margin-right: 10px;
+  background: var(--primary);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+.favorite-item a:hover { background: var(--primary-dark); color: #fff; }
+
+.favorite-item .remove-fav {
+  background: var(--danger);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+.favorite-item .remove-fav:hover { background: #9c3a26; }
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 600px) {
+  .favorite-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 14px;
+  }
+
+  .favorite-item img {
+    width: 120px;
+    height: 150px;
+  }
+}

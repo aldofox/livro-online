@@ -1,0 +1,215 @@
+/* ============================================================
+   ADMIN BANNERS - BookStore
+============================================================ */
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.admin-header h1 {
+  color: var(--primary-dark);
+  font-size: 1.6rem;
+}
+
+.banner-admin-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* ---- Formulário ---- */
+.banner-form {
+  background: #fff;
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: 14px;
+  padding: 26px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.banner-form h2 {
+  color: var(--primary-dark);
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+}
+
+.banner-form label {
+  display: block;
+  font-weight: 600;
+  color: var(--primary-dark);
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+.banner-form select,
+.banner-form input,
+.banner-form textarea {
+  width: 100%;
+  padding: 11px 13px;
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: 9px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  background: #f9fafb;
+}
+
+.banner-form select:focus,
+.banner-form input:focus,
+.banner-form textarea:focus {
+  outline: none;
+  border-color: var(--primary, #2563eb);
+  background: #fff;
+}
+
+.banner-form-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: var(--primary, #2563eb);
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 9px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark, #1f2937);
+}
+
+.btn-cancel {
+  background: #fff;
+  color: var(--text-muted, #6b7280);
+  border: 1px solid var(--border, #e5e7eb);
+  padding: 12px 22px;
+  border-radius: 9px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.btn-cancel:hover {
+  background: #f3f4f6;
+}
+
+/* ---- Lista ---- */
+.banner-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.banner-empty {
+  color: var(--text-muted);
+  background: #fff;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+}
+
+.banner-admin-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #fff;
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.banner-thumb img {
+  width: 70px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.banner-admin-info {
+  flex: 1;
+}
+
+.banner-admin-info h3 {
+  font-size: 1rem;
+  color: var(--primary-dark);
+  margin-bottom: 4px;
+}
+
+.banner-admin-info p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.badge-success {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badge-danger {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.banner-admin-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn-edit,
+.btn-delete {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.btn-edit {
+  background: #eff6ff;
+  color: var(--primary, #2563eb);
+}
+
+.btn-edit:hover {
+  background: var(--primary, #2563eb);
+  color: #fff;
+}
+
+.btn-delete {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.btn-delete:hover {
+  background: #dc2626;
+  color: #fff;
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 900px) {
+  .banner-admin-grid {
+    grid-template-columns: 1fr;
+  }
+}

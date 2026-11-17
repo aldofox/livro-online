@@ -1,0 +1,431 @@
+/* ============================================================
+   HOME - BookStore
+============================================================ */
+
+.home-main {
+  max-width: 1400px;
+  margin: 45px auto;
+  padding: 0 20px;
+}
+
+.home-main h2 {
+  margin-bottom: 30px;
+  color: var(--primary-dark);
+  font-size: 1.8rem;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.home-section {
+  margin-bottom: 55px;
+}
+
+/* ---------- Autores ---------- */
+.authors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.author-card {
+  background: #fff;
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+  transition: box-shadow 0.25s;
+}
+
+.author-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.author-photo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 14px;
+  border: 3px solid var(--primary, #2563eb);
+}
+
+.author-card h3 {
+  font-size: 1.15rem;
+  color: var(--primary-dark, #1f2937);
+  margin-bottom: 4px;
+}
+
+.author-category {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary, #2563eb);
+  background: #eff6ff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.author-books {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.author-book-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+.author-book-item img {
+  width: 36px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.author-book-item span {
+  font-size: 0.82rem;
+  color: #374151;
+}
+
+.author-no-books {
+  font-size: 0.85rem;
+  color: var(--text-muted, #6b7280);
+}
+
+/* ---------- Depoimentos ---------- */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.testimonial-card {
+  background: #fff;
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.testimonial-stars {
+  color: #f59e0b;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.testimonial-message {
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.testimonial-author {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary-dark, #1f2937);
+  margin-top: auto;
+}
+
+/* ---------- Comentários ---------- */
+.comment-section {
+  max-width: 720px;
+  margin: 0 auto 55px;
+  background: #fff;
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.comment-section > h2 {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.comment-form label {
+  display: block;
+  font-weight: 600;
+  color: var(--primary-dark, #1f2937);
+  margin-bottom: 8px;
+}
+
+.comment-rating {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.rating-star {
+  background: #f3f4f6;
+  border: 1px solid var(--border, #e5e7eb);
+  color: #d1d5db;
+  font-size: 1.5rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.rating-star.active {
+  color: #f59e0b;
+  border-color: #f59e0b;
+  background: #fffbeb;
+}
+
+.comment-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  resize: vertical;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+.comment-submit-btn {
+  background: var(--primary, #2563eb);
+  color: #fff;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.comment-submit-btn:hover {
+  background: var(--primary-dark, #1f2937);
+}
+
+.comment-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.comment-login-hint {
+  text-align: center;
+  color: var(--text-muted, #6b7280);
+}
+
+.comment-login-prompt {
+  text-align: center;
+  color: var(--text-muted, #6b7280);
+  padding: 16px;
+}
+
+.comment-login-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.comment-login-btn,
+.comment-register-btn {
+  display: inline-block;
+  padding: 11px 26px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.comment-login-btn {
+  background: var(--primary, #2563eb);
+  color: #fff;
+}
+
+.comment-login-btn:hover {
+  background: var(--primary-dark, #1f2937);
+}
+
+.comment-register-btn {
+  background: #fff;
+  color: var(--primary, #2563eb);
+  border: 1px solid var(--primary, #2563eb);
+}
+
+.comment-register-btn:hover {
+  background: #eff6ff;
+}
+
+/* ---------- Contato ---------- */
+.home-contact .contact-banner {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  border-radius: 18px;
+  padding: 48px;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-banner-info h2 {
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.contact-banner-info p {
+  font-size: 1.05rem;
+  max-width: 560px;
+  margin: 0 auto 22px;
+  opacity: 0.9;
+}
+
+.contact-banner-btn {
+  display: inline-block;
+  background: #fff;
+  color: var(--primary, #2563eb);
+  padding: 13px 30px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.contact-banner-btn:hover {
+  background: #f3f4f6;
+  transform: translateY(-2px);
+}
+
+/* ---------- Livros Mais Vendidos ---------- */
+.best-sellers-section {
+  margin-top: 10px;
+}
+
+.best-sellers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.best-seller-card {
+  position: relative;
+  background: var(--card, #fff);
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow, 0 4px 12px rgba(0,0,0,0.08));
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.best-seller-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 26px rgba(93, 64, 32, 0.14);
+}
+
+.best-seller-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--danger, #ef4444);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 20px;
+  z-index: 2;
+  box-shadow: 0 2px 6px rgba(239, 68, 68, 0.4);
+}
+
+.best-seller-cover {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  margin-bottom: 14px;
+  background: var(--bg-alt, #f9fafb);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.best-seller-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-h, #1f2937);
+  margin-bottom: 4px;
+  font-family: var(--sans, sans-serif);
+}
+
+.best-seller-author {
+  color: var(--text-muted, #6b7280);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.best-seller-desc {
+  color: var(--text-muted, #6b7280);
+  font-size: 0.85rem;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.best-seller-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--primary, #2563eb);
+  margin-bottom: 14px;
+  display: block;
+}
+
+.best-seller-actions {
+  margin-top: auto;
+}
+
+.best-seller-details-btn {
+  display: inline-block;
+  width: 100%;
+  background: var(--primary-dark, #1f2937);
+  color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.25s;
+  box-sizing: border-box;
+}
+
+.best-seller-details-btn:hover {
+  background: var(--primary, #2563eb);
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 600px) {
+  .books-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+  }
+
+  .best-sellers-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+  }
+
+  .home-contact .contact-banner {
+    padding: 32px 20px;
+  }
+}

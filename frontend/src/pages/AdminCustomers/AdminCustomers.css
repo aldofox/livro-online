@@ -1,0 +1,40 @@
+/* ============================================================
+   ADMIN CUSTOMERS - BookStore
+============================================================ */
+
+.customers-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  min-width: 720px;
+}
+
+.customers-table thead {
+  background: var(--primary-dark);
+  color: #fff;
+}
+
+.customers-table th,
+.customers-table td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.customers-table tbody tr:hover { background: var(--bg-alt); }
+
+.customer-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--primary-light);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+}

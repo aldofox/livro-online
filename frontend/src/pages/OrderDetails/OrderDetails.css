@@ -1,0 +1,107 @@
+/* ============================================================
+   ORDER DETAILS - BookStore
+============================================================ */
+
+.order-details {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.order-card,
+.items-card,
+.address-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: var(--shadow);
+}
+
+.order-card h1 {
+  margin-bottom: 20px;
+  color: var(--primary-dark);
+}
+
+.address-card h2 {
+  margin-bottom: 15px;
+  color: var(--primary-dark);
+  font-size: 1.3rem;
+}
+
+.items-card h2 {
+  margin-bottom: 15px;
+  color: var(--primary-dark);
+  font-size: 1.3rem;
+}
+
+.order-info p {
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.order-info strong { color: var(--text-h); }
+
+.address-card p {
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+/* ---------- Itens ---------- */
+.order-item {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.order-item:last-child { border-bottom: none; }
+
+.order-item img {
+  width: 90px;
+  height: 120px;
+  object-fit: contain;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  flex-shrink: 0;
+  padding: 6px;
+}
+
+.item-info h3 {
+  font-family: var(--sans);
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-h);
+}
+
+.item-info p {
+  margin-bottom: 5px;
+  color: var(--text);
+}
+
+/* ---------- Status ---------- */
+.status {
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.waiting { background: var(--warning-bg); color: #8f5f14; }
+.processing { background: #e3ecf7; color: #2b5a8a; }
+.sent { background: #e2f0f2; color: #2c6b6f; }
+.delivered { background: var(--success-bg); color: #5c7040; }
+.cancelled { background: var(--danger-bg); color: #9c3a26; }
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 768px) {
+  .order-item { flex-direction: column; }
+
+  .order-item img {
+    width: 120px;
+    height: 150px;
+  }
+}

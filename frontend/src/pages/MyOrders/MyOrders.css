@@ -1,0 +1,97 @@
+/* ============================================================
+   MY ORDERS - BookStore
+============================================================ */
+
+.my-orders-page {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.my-orders-page h1 {
+  margin-bottom: 30px;
+  color: var(--primary-dark);
+}
+
+/* ---------- Vazio ---------- */
+.empty-orders {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 50px;
+  text-align: center;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+.empty-orders i {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: var(--primary-light);
+}
+
+.empty-orders h2 {
+  margin-bottom: 10px;
+  color: var(--text-h);
+}
+
+.empty-orders p { color: var(--text-muted); }
+
+/* ---------- Grade de pedidos ---------- */
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.order-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: 0.25s;
+}
+
+.order-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(93, 64, 32, 0.12);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.order-header h3 {
+  font-family: var(--sans);
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.order-header span {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.order-info p {
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.order-info strong { color: var(--text-h); }
+
+.details-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+.details-btn:hover { background: var(--primary-dark); color: #fff; }

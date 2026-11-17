@@ -1,0 +1,145 @@
+/* ============================================================
+   CHECKOUT - BookStore
+============================================================ */
+
+.checkout-page {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.checkout-left,
+.checkout-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.checkout-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+.checkout-card h2 {
+  margin-bottom: 20px;
+  color: var(--primary-dark);
+  font-size: 1.3rem;
+}
+
+/* ---------- Endereço / Pagamento ---------- */
+.address-option {
+  display: block;
+  padding: 14px;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.address-option:hover { border-color: var(--primary-light); background: var(--bg); }
+
+.address-option input { margin-right: 10px; }
+
+.checkout-card > label {
+  display: block;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.checkout-card > label input { margin-right: 8px; }
+
+/* ---------- Resumo ---------- */
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.summary-product {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.summary-product img {
+  width: 60px;
+  height: 84px;
+  object-fit: contain;
+  background: var(--bg-alt);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.summary-product h4 {
+  margin: 0 0 5px;
+  font-size: 15px;
+  font-family: var(--sans);
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.summary-product p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.summary-price {
+  font-weight: bold;
+  color: var(--primary);
+  white-space: nowrap;
+}
+
+.checkout-card hr {
+  border: none;
+  border-top: 1px dashed var(--border);
+  margin: 20px 0;
+}
+
+.checkout-card h3 {
+  font-size: 1.2rem;
+  color: var(--text-h);
+  margin-bottom: 20px;
+}
+
+.finish-btn {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  background: var(--primary);
+  color: #fff;
+  transition: 0.25s;
+}
+
+.finish-btn:hover { background: var(--primary-dark); }
+
+.finish-btn:disabled {
+  background: var(--border);
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 768px) {
+  .checkout-grid { grid-template-columns: 1fr; }
+
+  .summary-item { flex-direction: column; align-items: flex-start; }
+}
